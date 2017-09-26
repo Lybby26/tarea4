@@ -17,6 +17,15 @@
 		9A56DA671F79F19900BF49CC /* cellMainTable.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A56DA651F79F19900BF49CC /* cellMainTable.m */; };
 		9A56DA681F79F19900BF49CC /* cellMainTable.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A56DA661F79F19900BF49CC /* cellMainTable.xib */; };
 		9A56DA6B1F79F96600BF49CC /* tyrion.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9A56DA6A1F79F96600BF49CC /* tyrion.jpg */; };
+		9A56DA8A1F7A027700BF49CC /* arya.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9A56DA811F7A027700BF49CC /* arya.jpg */; };
+		9A56DA8B1F7A027700BF49CC /* bran.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9A56DA821F7A027700BF49CC /* bran.jpg */; };
+		9A56DA8C1F7A027700BF49CC /* cersei.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 9A56DA831F7A027700BF49CC /* cersei.jpeg */; };
+		9A56DA8D1F7A027700BF49CC /* daenerys.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 9A56DA841F7A027700BF49CC /* daenerys.jpeg */; };
+		9A56DA8E1F7A027700BF49CC /* drogo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9A56DA851F7A027700BF49CC /* drogo.jpg */; };
+		9A56DA8F1F7A027700BF49CC /* jon.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 9A56DA861F7A027700BF49CC /* jon.jpeg */; };
+		9A56DA901F7A027700BF49CC /* margaery.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9A56DA871F7A027700BF49CC /* margaery.jpg */; };
+		9A56DA911F7A027700BF49CC /* sansa.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A56DA881F7A027700BF49CC /* sansa.png */; };
+		9A56DA921F7A027700BF49CC /* theon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9A56DA891F7A027700BF49CC /* theon.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +44,15 @@
 		9A56DA651F79F19900BF49CC /* cellMainTable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = cellMainTable.m; sourceTree = "<group>"; };
 		9A56DA661F79F19900BF49CC /* cellMainTable.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = cellMainTable.xib; sourceTree = "<group>"; };
 		9A56DA6A1F79F96600BF49CC /* tyrion.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tyrion.jpg; sourceTree = "<group>"; };
+		9A56DA811F7A027700BF49CC /* arya.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = arya.jpg; sourceTree = "<group>"; };
+		9A56DA821F7A027700BF49CC /* bran.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bran.jpg; sourceTree = "<group>"; };
+		9A56DA831F7A027700BF49CC /* cersei.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cersei.jpeg; sourceTree = "<group>"; };
+		9A56DA841F7A027700BF49CC /* daenerys.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = daenerys.jpeg; sourceTree = "<group>"; };
+		9A56DA851F7A027700BF49CC /* drogo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = drogo.jpg; sourceTree = "<group>"; };
+		9A56DA861F7A027700BF49CC /* jon.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = jon.jpeg; sourceTree = "<group>"; };
+		9A56DA871F7A027700BF49CC /* margaery.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = margaery.jpg; sourceTree = "<group>"; };
+		9A56DA881F7A027700BF49CC /* sansa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sansa.png; sourceTree = "<group>"; };
+		9A56DA891F7A027700BF49CC /* theon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = theon.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +138,15 @@
 		9A56DA691F79F96600BF49CC /* imgs */ = {
 			isa = PBXGroup;
 			children = (
+				9A56DA811F7A027700BF49CC /* arya.jpg */,
+				9A56DA821F7A027700BF49CC /* bran.jpg */,
+				9A56DA831F7A027700BF49CC /* cersei.jpeg */,
+				9A56DA841F7A027700BF49CC /* daenerys.jpeg */,
+				9A56DA851F7A027700BF49CC /* drogo.jpg */,
+				9A56DA861F7A027700BF49CC /* jon.jpeg */,
+				9A56DA871F7A027700BF49CC /* margaery.jpg */,
+				9A56DA881F7A027700BF49CC /* sansa.png */,
+				9A56DA891F7A027700BF49CC /* theon.jpg */,
 				9A56DA6A1F79F96600BF49CC /* tyrion.jpg */,
 			);
 			path = imgs;
@@ -185,9 +212,18 @@
 			files = (
 				9A56DA5A1F79E7AF00BF49CC /* LaunchScreen.storyboard in Resources */,
 				9A56DA6B1F79F96600BF49CC /* tyrion.jpg in Resources */,
+				9A56DA8C1F7A027700BF49CC /* cersei.jpeg in Resources */,
 				9A56DA571F79E7AF00BF49CC /* Assets.xcassets in Resources */,
+				9A56DA921F7A027700BF49CC /* theon.jpg in Resources */,
+				9A56DA8B1F7A027700BF49CC /* bran.jpg in Resources */,
+				9A56DA8F1F7A027700BF49CC /* jon.jpeg in Resources */,
+				9A56DA8E1F7A027700BF49CC /* drogo.jpg in Resources */,
+				9A56DA911F7A027700BF49CC /* sansa.png in Resources */,
 				9A56DA521F79E7AF00BF49CC /* Main.storyboard in Resources */,
+				9A56DA8A1F7A027700BF49CC /* arya.jpg in Resources */,
+				9A56DA8D1F7A027700BF49CC /* daenerys.jpeg in Resources */,
 				9A56DA681F79F19900BF49CC /* cellMainTable.xib in Resources */,
+				9A56DA901F7A027700BF49CC /* margaery.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

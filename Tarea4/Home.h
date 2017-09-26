@@ -10,6 +10,7 @@
 
 @interface Home : UIViewController
 
+@property (strong, nonatomic) IBOutlet UITableView *tblMain;
 
 @end
 
