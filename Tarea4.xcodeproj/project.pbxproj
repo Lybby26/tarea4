@@ -14,6 +14,9 @@
 		9A56DA551F79E7AF00BF49CC /* Tarea4.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9A56DA531F79E7AF00BF49CC /* Tarea4.xcdatamodeld */; };
 		9A56DA571F79E7AF00BF49CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A56DA561F79E7AF00BF49CC /* Assets.xcassets */; };
 		9A56DA5A1F79E7AF00BF49CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A56DA581F79E7AF00BF49CC /* LaunchScreen.storyboard */; };
+		9A56DA671F79F19900BF49CC /* cellMainTable.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A56DA651F79F19900BF49CC /* cellMainTable.m */; };
+		9A56DA681F79F19900BF49CC /* cellMainTable.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A56DA661F79F19900BF49CC /* cellMainTable.xib */; };
+		9A56DA6B1F79F96600BF49CC /* tyrion.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9A56DA6A1F79F96600BF49CC /* tyrion.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +31,10 @@
 		9A56DA561F79E7AF00BF49CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9A56DA591F79E7AF00BF49CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9A56DA5B1F79E7AF00BF49CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9A56DA641F79F19900BF49CC /* cellMainTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cellMainTable.h; sourceTree = "<group>"; };
+		9A56DA651F79F19900BF49CC /* cellMainTable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = cellMainTable.m; sourceTree = "<group>"; };
+		9A56DA661F79F19900BF49CC /* cellMainTable.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = cellMainTable.xib; sourceTree = "<group>"; };
+		9A56DA6A1F79F96600BF49CC /* tyrion.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tyrion.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +67,8 @@
 		9A56DA461F79E7AF00BF49CC /* Tarea4 */ = {
 			isa = PBXGroup;
 			children = (
+				9A56DA691F79F96600BF49CC /* imgs */,
+				9A56DA631F79F0C900BF49CC /* Cells */,
 				9A56DA621F79E7CF00BF49CC /* Main */,
 				9A56DA611F79E7C700BF49CC /* Controllers */,
 				9A56DA501F79E7AF00BF49CC /* Main.storyboard */,
@@ -96,6 +105,24 @@
 				9A56DA4A1F79E7AF00BF49CC /* AppDelegate.h */,
 			);
 			name = Main;
+			sourceTree = "<group>";
+		};
+		9A56DA631F79F0C900BF49CC /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				9A56DA641F79F19900BF49CC /* cellMainTable.h */,
+				9A56DA651F79F19900BF49CC /* cellMainTable.m */,
+				9A56DA661F79F19900BF49CC /* cellMainTable.xib */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		9A56DA691F79F96600BF49CC /* imgs */ = {
+			isa = PBXGroup;
+			children = (
+				9A56DA6A1F79F96600BF49CC /* tyrion.jpg */,
+			);
+			path = imgs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -157,8 +184,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				9A56DA5A1F79E7AF00BF49CC /* LaunchScreen.storyboard in Resources */,
+				9A56DA6B1F79F96600BF49CC /* tyrion.jpg in Resources */,
 				9A56DA571F79E7AF00BF49CC /* Assets.xcassets in Resources */,
 				9A56DA521F79E7AF00BF49CC /* Main.storyboard in Resources */,
+				9A56DA681F79F19900BF49CC /* cellMainTable.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -172,6 +201,7 @@
 				9A56DA551F79E7AF00BF49CC /* Tarea4.xcdatamodeld in Sources */,
 				9A56DA4F1F79E7AF00BF49CC /* Home.m in Sources */,
 				9A56DA4C1F79E7AF00BF49CC /* AppDelegate.m in Sources */,
+				9A56DA671F79F19900BF49CC /* cellMainTable.m in Sources */,
 				9A56DA491F79E7AF00BF49CC /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
