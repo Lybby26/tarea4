@@ -11,6 +11,7 @@
 @interface Home : UIViewController
 
 @property (strong, nonatomic) IBOutlet UITableView *tblMain;
+- (IBAction)btnAddPressed:(id)sender;
 
 @end
 

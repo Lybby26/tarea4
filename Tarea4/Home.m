@@ -72,4 +72,10 @@
     //Pending
 }
 
+- (IBAction)btnAddPressed:(id)sender {
+    [self.userNames addObject:@"Drogo"];
+    [self.userAges addObject:@"37 anios"];
+    [self.userImages addObject:@"drogo.jpg"];
+    [self.tblMain reloadData];
+}
 @end
