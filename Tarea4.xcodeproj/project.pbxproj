@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		9A56DA491F79E7AF00BF49CC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A56DA481F79E7AF00BF49CC /* main.m */; };
 		9A56DA4C1F79E7AF00BF49CC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A56DA4B1F79E7AF00BF49CC /* AppDelegate.m */; };
-		9A56DA4F1F79E7AF00BF49CC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A56DA4E1F79E7AF00BF49CC /* ViewController.m */; };
+		9A56DA4F1F79E7AF00BF49CC /* Home.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A56DA4E1F79E7AF00BF49CC /* Home.m */; };
 		9A56DA521F79E7AF00BF49CC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A56DA501F79E7AF00BF49CC /* Main.storyboard */; };
 		9A56DA551F79E7AF00BF49CC /* Tarea4.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9A56DA531F79E7AF00BF49CC /* Tarea4.xcdatamodeld */; };
 		9A56DA571F79E7AF00BF49CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A56DA561F79E7AF00BF49CC /* Assets.xcassets */; };
@@ -21,8 +21,8 @@
 		9A56DA481F79E7AF00BF49CC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9A56DA4A1F79E7AF00BF49CC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9A56DA4B1F79E7AF00BF49CC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		9A56DA4D1F79E7AF00BF49CC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		9A56DA4E1F79E7AF00BF49CC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		9A56DA4D1F79E7AF00BF49CC /* Home.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Home.h; sourceTree = "<group>"; };
+		9A56DA4E1F79E7AF00BF49CC /* Home.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Home.m; sourceTree = "<group>"; };
 		9A56DA511F79E7AF00BF49CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9A56DA541F79E7AF00BF49CC /* Tarea4.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Tarea4.xcdatamodel; sourceTree = "<group>"; };
 		9A56DA561F79E7AF00BF49CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -60,10 +60,8 @@
 		9A56DA461F79E7AF00BF49CC /* Tarea4 */ = {
 			isa = PBXGroup;
 			children = (
-				9A56DA4A1F79E7AF00BF49CC /* AppDelegate.h */,
-				9A56DA4B1F79E7AF00BF49CC /* AppDelegate.m */,
-				9A56DA4D1F79E7AF00BF49CC /* ViewController.h */,
-				9A56DA4E1F79E7AF00BF49CC /* ViewController.m */,
+				9A56DA621F79E7CF00BF49CC /* Main */,
+				9A56DA611F79E7C700BF49CC /* Controllers */,
 				9A56DA501F79E7AF00BF49CC /* Main.storyboard */,
 				9A56DA561F79E7AF00BF49CC /* Assets.xcassets */,
 				9A56DA581F79E7AF00BF49CC /* LaunchScreen.storyboard */,
@@ -80,6 +78,24 @@
 				9A56DA481F79E7AF00BF49CC /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9A56DA611F79E7C700BF49CC /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				9A56DA4D1F79E7AF00BF49CC /* Home.h */,
+				9A56DA4E1F79E7AF00BF49CC /* Home.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		9A56DA621F79E7CF00BF49CC /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				9A56DA4B1F79E7AF00BF49CC /* AppDelegate.m */,
+				9A56DA4A1F79E7AF00BF49CC /* AppDelegate.h */,
+			);
+			name = Main;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,7 +170,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9A56DA551F79E7AF00BF49CC /* Tarea4.xcdatamodeld in Sources */,
-				9A56DA4F1F79E7AF00BF49CC /* ViewController.m in Sources */,
+				9A56DA4F1F79E7AF00BF49CC /* Home.m in Sources */,
 				9A56DA4C1F79E7AF00BF49CC /* AppDelegate.m in Sources */,
 				9A56DA491F79E7AF00BF49CC /* main.m in Sources */,
 			);
