@@ -73,9 +73,57 @@
 }
 
 - (IBAction)btnAddPressed:(id)sender {
-    [self.userNames addObject:@"Drogo"];
-    [self.userAges addObject:@"37 anios"];
-    [self.userImages addObject:@"drogo.jpg"];
-    [self.tblMain reloadData];
+    
+    UIAlertController * alertController = [UIAlertController alertControllerWithTitle: @"Agregar personaje" message: @"Ingresa nombre y edad del personaje" preferredStyle:UIAlertControllerStyleAlert];
+    [alertController addTextFieldWithConfigurationHandler:^(UITextField *textField) {
+        textField.placeholder = @"nombre";
+        textField.textColor = [UIColor blueColor];
+        textField.clearButtonMode = UITextFieldViewModeWhileEditing;
+        textField.borderStyle = UITextBorderStyleRoundedRect;
+    }];
+    [alertController addTextFieldWithConfigurationHandler:^(UITextField *textField) {
+        textField.placeholder = @"edad";
+        textField.textColor = [UIColor blueColor];
+        textField.clearButtonMode = UITextFieldViewModeWhileEditing;
+        textField.borderStyle = UITextBorderStyleRoundedRect;
+        
+    }];
+    
+    /**/
+    
+    [alertController addAction:[UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
+        NSArray * textfields = alertController.textFields;
+        UITextField * namefield = textfields[0];
+        UITextField * agefield = textfields[1];
+        
+        
+        
+        NSLog(@"%@:%@",namefield.text,agefield.text);
+        if (![namefield.text isEqualToString:@""] && ![agefield.text isEqualToString:@""]) {
+            
+            [self.userNames addObject:namefield.text];
+            [self.userAges addObject:agefield.text];
+            [self.userImages addObject:@"margaery.jpg"];
+            [self.tblMain reloadData];
+            
+        }
+        
+    }]];
+    
+    
+    
+    
+    
+    /**/
+    
+    
+    
+    
+    
+   
+    [self presentViewController:alertController animated:YES completion:nil];
+    
+    
+  
 }
 @end
