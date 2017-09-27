@@ -13,6 +13,9 @@
 @property NSMutableArray *userNames;
 @property NSMutableArray *userAges;
 @property NSMutableArray *userImages;
+@property UIImage *choosenImage;
+@property NSString *choosenName;
+@property NSString *choosenAge;
 @end
 
 @implementation Home
@@ -35,7 +38,10 @@
     
     self.userAges  = [[NSMutableArray alloc] initWithObjects: @"38 años", @"22 años", @"25 años", @"16 años", @"42 años", nil];
     
-    self.userImages = [[NSMutableArray alloc] initWithObjects: @"tyrion.jpg", @"daenerys.jpeg", @"jon.jpeg", @"arya.jpg", @"cersei.jpeg", nil];
+    self.userImages = [[NSMutableArray alloc] initWithObjects: [UIImage imageNamed: @"tyrion.jpg"] , [UIImage imageNamed:@"daenerys.jpeg"], [UIImage imageNamed:@"jon.jpeg" ], [UIImage imageNamed:@"arya.jpg" ], [UIImage imageNamed:@"cersei.jpeg" ], nil];
+    
+    
+    
 }
 /**********************************************************************************************/
 #pragma mark - Table source and delegate methods
@@ -63,15 +69,42 @@
     //Fill cell with info from arrays
     cell.lblName.text       = self.userNames[indexPath.row];
     cell.lblAge.text        = self.userAges[indexPath.row];
-    cell.imgUser.image      = [UIImage imageNamed:self.userImages[indexPath.row]];
+    NSLog(@"Paso por aqui");
+    cell.imgUser.image      = self.userImages[indexPath.row];
+    //[UIImage imageNamed:self.userImages[indexPath.row]];
     
     return cell;
 }
+
+ /*
+  Este es el metodo para obtener la imagen de la camara
+  -(void)getPhotofrom{
+ UIImagePickerController *picker = [[UIImagePickerController alloc] init];
+ picker.delegate = self;
+ picker.allowsEditing = YES;
+ picker.sourceType = UIImagePickerControllerSourceTypeCamera;
+ [self presentViewController:picker animated:YES completion:nil];
+  }*/
 //-------------------------------------------------------------------------------
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     //Pending
 }
 
+-(void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info {
+    NSLog(@"Paso por aqui imagePickerController");
+    // output image
+    UIImage *chosenImg = info[UIImagePickerControllerOriginalImage];
+    self.choosenImage = chosenImg;
+    
+    [self.userNames addObject:_choosenName];
+    [self.userAges addObject:_choosenAge];
+    [self.userImages addObject:chosenImg];
+     //[UIImage imageNamed:@"daenerys.jpeg"]];
+   
+    [picker dismissViewControllerAnimated:YES completion:nil];
+     [self.tblMain reloadData];
+    
+}
 - (IBAction)btnAddPressed:(id)sender {
     
     UIAlertController * alertController = [UIAlertController alertControllerWithTitle: @"Agregar personaje" message: @"Ingresa nombre y edad del personaje" preferredStyle:UIAlertControllerStyleAlert];
@@ -92,6 +125,7 @@
     /**/
     
     [alertController addAction:[UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
+        
         NSArray * textfields = alertController.textFields;
         UITextField * namefield = textfields[0];
         UITextField * agefield = textfields[1];
@@ -101,25 +135,31 @@
         NSLog(@"%@:%@",namefield.text,agefield.text);
         if (![namefield.text isEqualToString:@""] && ![agefield.text isEqualToString:@""]) {
             
-            [self.userNames addObject:namefield.text];
-            [self.userAges addObject:agefield.text];
-            [self.userImages addObject:@"margaery.jpg"];
-            [self.tblMain reloadData];
+            self.choosenName= namefield.text;
+            self.choosenAge = agefield.text;
+            
+            UIImagePickerController *picker = [[UIImagePickerController alloc] init];
+            picker.delegate = self;
+            picker.allowsEditing = YES;
+            picker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
+    
+            [self presentViewController:picker animated:YES completion:nil];
+   
             
         }
         
     }]];
     
     
-    
-    
+    UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"Cancelar" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+        NSLog(@"Cancelled");
+    }];
+    [alertController addAction:cancelAction];
+
     
     /**/
     
-    
-    
-    
-    
+    //[self.tblMain reloadData];
    
     [self presentViewController:alertController animated:YES completion:nil];
     

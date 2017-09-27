@@ -8,10 +8,17 @@
 
 #import <UIKit/UIKit.h>
 
-@interface Home : UIViewController
-
+@interface Home :  UIViewController
+/*
+ <UIImagePickerControllerDelegate, UINavigationControllerDelegate>
+{
+    UIImagePickerController *ipc;
+    UIPopoverController *popover;
+}
+*/
 @property (strong, nonatomic) IBOutlet UITableView *tblMain;
 - (IBAction)btnAddPressed:(id)sender;
+
 
 @end
 
